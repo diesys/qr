@@ -172,6 +172,7 @@ label {
   background-color: rgba(0, 0, 0, .95);
   color: #ddd;
   border-radius: 3px;
+  z-index: 1000;
 
   transition: all .5s;
 }
