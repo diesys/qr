@@ -46,7 +46,11 @@
   <div class="space"></div>
     <div class="textContainer">
       <label for="text">CONTENT</label>
-      <textarea autofocus id="text" spellcheck="false" placeholder="Insert text to QR-encode">http://flowin.space/qr/</textarea>
+      <textarea autofocus id="text" spellcheck="false" placeholder="Insert text to QR-encode"></textarea>
+    </div>
+    <div class="sizeContainer">
+      <label for="size">SIZE:</label>
+      <input id="size" type="range" value="300" min="100" max="1000" step="50">
     </div>
     <div id="container"></div>
 
@@ -63,8 +67,7 @@
             <option value="false">false</option>
         </select>
       <hr>
-      <label for="size">SIZE:</label>
-        <input id="size" type="range" value="300" min="100" max="1000" step="50">
+
       <label for="fill">FILL</label>
         <input id="fill" type="color" value="#222222">
       <label for="back">BACK</label>
@@ -85,13 +88,13 @@
         </select>
 
       <label for="quiet">QUIET ZONE:</label>
-        <input id="quiet" type="range" value="1" min="1" max="4" step="1">
+        <input id="quiet" type="range" value="2" min="1" max="4" step="1">
       <label for="rounded">ROUNDED CORNERS:</label>
         <input id="rounded" type="range" value="50" min="0" max="100" step="10">
     </div>
 
     <div class="control right">
-      <label for="mode">MODE</label>
+      <label for="mode">DECORATION</label>
         <select id="mode">
           <option value="plain">plain</option>
           <option value="label">label</option>
