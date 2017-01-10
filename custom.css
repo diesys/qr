@@ -15,7 +15,7 @@ html, body, input, textarea, select {
 
 body {
     background-color: #181818;
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*background: repeat url('back.png');*/
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .textContainer {
-  position: fixed;
+  position: absolute;
   text-align: center;
   top: 0px;
   left: 50%;
@@ -60,7 +60,7 @@ body {
   background-color: rgba(0,0,0,.7);
   color: #efefef;
   border: none;
-  border-top: 2px solid rgba(250,250,250,.4);
+  border-top: 2px solid rgba(250,250,250,.3);
   border-radius: 3px;
   padding: 10px 15px;
   box-shadow: 0 4px 30px rgba(0,0,0,.7);
