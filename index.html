@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>QR - FlowInSpace</title>
-    <meta name="description" content="QR code generator at FlowIn.Space credits by kjua (https://larsjung.de/kjua/)">
+    <meta name="description" content="QR code generator at FlowIn.Space (using kjua https://larsjung.de/kjua/)">
 
     <link href="styles.min.css" rel="stylesheet">
     <link href="custom.min.css" rel="stylesheet">
@@ -43,19 +43,24 @@
 </head>
 
 <body>
-  <div class="space"></div>
+    <!-- Background -->
+    <div class="space"></div>
+
     <div class="textContainer">
-      <!-- <label for="text">CONTENT</label> -->
-      <textarea autofocus id="text" spellcheck="false" placeholder="Insert text to QR-encode"></textarea>
+      <textarea autofocus id="text" spellcheck="false" placeholder="Text to QR-encode.."></textarea>
     </div>
+
     <div class="sizeContainer">
       <label for="size">SIZE:</label>
-      <input id="size" type="range" value="240" min="100" max="1000" step="50">
+        <input id="size" type="range" value="240" min="100" max="1000" step="50">
     </div>
+
+    <!-- The QR is generated here  -->
     <div id="container"></div>
 
-    <div class="control left">
-      <!-- <a id="banner" href="#">QR from the space...</a> -->
+    <!-- Left control menu -->
+    <div id="lControlToggle">QR settings</div>
+    <div id="lControl" class="control left hidden">
       <label for="render">RENDER MODE</label>
         <select id="render">
             <option value="image" selected="selected">image</option><option value="canvas">canvas</option>
@@ -72,8 +77,6 @@
         <input id="fill" type="color" value="#222222">
       <label for="back">BACK</label>
         <input id="back" type="color" value="#ffffff">
-      <!-- <label for="text">CONTENT</label>
-        <textarea autofocus id="text" placeholder="insert text to QR-encode">http://flowin.space/qr/</textarea> -->
 
       <hr>
       <label for="minversion">MIN VERSION:</label>
@@ -93,7 +96,9 @@
         <input id="rounded" type="range" value="50" min="0" max="100" step="10">
     </div>
 
-    <div class="control right">
+    <!-- Right control menu -->
+    <div id="rControlToggle">Decoration</div>
+    <div id="rControl" class="control right hidden">
       <label for="mode">DECORATION</label>
         <select id="mode">
           <option value="plain">plain</option>
@@ -126,6 +131,27 @@
         <input id="image" type="file">
     </div>
 
-      <img id="img-buffer" src="flowinspace.svg">
+    <!-- default logo -->
+    <img id="img-buffer" src="flowinspace.svg">
+
+    <script>
+      var lControl = document.getElementById("lControl"),
+          rControl = document.getElementById("rControl");
+
+      document.getElementById("lControlToggle").onclick = function() {
+        if (lControl.className == "control left hidden")
+           lControl.className = "control left"
+        else
+           lControl.className = "control left hidden"
+      };
+
+      document.getElementById("rControlToggle").onclick = function() {
+        if (rControl.className == "control right hidden")
+           rControl.className = "control right"
+        else
+           rControl.className = "control right hidden"
+      };
+    </script>
+
   </body>
 </html>
