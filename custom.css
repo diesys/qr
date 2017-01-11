@@ -73,7 +73,7 @@ body {
 }
 
 .textContainer textarea#text:hover, .textContainer textarea#text:active, .textContainer textarea#text:focus {
-    border: 1px solid rgba(250,250,250,.2);
+    border: 1px solid rgba(210,210,210,.2);
     opacity: 1;
 }
 
