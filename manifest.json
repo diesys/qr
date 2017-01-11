@@ -1,0 +1,26 @@
+{
+  "name": "QR generator - FlowInSpace",
+  "short_name": "QR generator",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#181818",
+  "theme-color": "#181818",
+  "description": "A QR generator based on ",
+  "icons": [{
+    "src": "img/favicon72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon114.png",
+    "sizes": "114x114",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon114.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }]
+}
