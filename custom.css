@@ -6,7 +6,7 @@
 
 @font-face {
    font-family: 'Grand Hotel';
-   src: url('font/GrandHotel-Regular.otf') format('otf');
+   src: url('font/GrandHotel-Regular.otf') format('opentype');
 }
 
 html, body, input, textarea, select {
