@@ -5,7 +5,7 @@
   "display": "standalone",
   "background_color": "#181818",
   "theme-color": "#181818",
-  "description": "A QR generator based on ",
+  "description": "A QR generator based on kjua",
   "icons": [{
     "src": "img/favicon72.png",
     "sizes": "72x72",
