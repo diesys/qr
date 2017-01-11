@@ -2,6 +2,7 @@ CACHE MANIFEST
 # Version 1
 
 CACHE:
+manifest.json
 styles.min.css
 custom.min.css
 bower_components/kjua/dist/kjua.min.js
