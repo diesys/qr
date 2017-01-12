@@ -55,7 +55,7 @@
 
     <div class="sizeContainer">
       <label for="size">SIZE:</label>
-        <input id="size" type="range" value="240" min="100" max="1000" step="50">
+        <input id="size" type="range" value="240" min="100" max="1000" step="10" onfocus="blur();">
     </div>
 
     <!-- The QR is generated here  -->
@@ -77,7 +77,7 @@
       <hr>
 
       <label for="fill">FILL</label>
-        <input id="fill" type="color" value="#222222">
+        <input id="fill" type="color" value="#303030">
       <label for="back">BACK</label>
         <input id="back" type="color" value="#ffffff">
 
@@ -94,7 +94,7 @@
         </select>
 
       <label for="quiet">QUIET ZONE:</label>
-        <input id="quiet" type="range" value="2" min="1" max="4" step="1">
+        <input id="quiet" type="range" value="1" min="1" max="4" step="1">
       <label for="rounded">ROUNDED CORNERS:</label>
         <input id="rounded" type="range" value="50" min="0" max="100" step="10">
     </div>

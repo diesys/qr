@@ -13,8 +13,10 @@ html, body, input, textarea, select {
     font-family: 'OpenSans', Arial;
 }
 
-body {
+html, body {
     background-color: #181818;
+    height: 100%;
+    max-height: 100%;
 }
 
 @keyframes shine {
@@ -85,7 +87,7 @@ body {
   padding-bottom: 10px;
   transform: translateX(-50%);
   z-index: 100;
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .sizeContainer input#size {
@@ -110,29 +112,33 @@ label {
 }
 
 #container {
-  position: absolute;
+  box-sizing: border-box;
+  position: fixed;
   /*border-top: 2px solid rgba(250,250,250,.4);*/
   overflow: hidden;
-  top: 45%;
+  top: 49%;
   left: 50%;
+  text-align: center;
   transform: translate(-50%,-50%);
 }
 
 #container img {
+  text-align: center;
   border-radius: 6px;
   box-shadow: 0 5px 30px rgba(0,0,0,.7);
 }
 
 #lControlToggle, #rControlToggle {
   position: fixed;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   min-height: 1em;
-  font-size: .9em;
+  font-size: .85em;
+  min-width: 60px;
   max-width: 13%;
   bottom: 0;
   background-color: rgba(0, 0, 0, .6);
   color: #ccc;
-  padding: .5em 1em;
+  padding: .4em .6em;
   text-align: center;
   margin: 10px;
   border-radius: 3px;
@@ -178,7 +184,7 @@ label {
   overflow-y: scroll;
   margin-bottom: 2em;
 
-  transition: all .5s;
+  transition: all .35s;
 }
 
 .control.left.hidden {
