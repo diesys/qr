@@ -5,12 +5,12 @@
 }
 
 @font-face {
-   font-family: 'Grand Hotel';
+   font-family: 'GrandHotel';
    src: url('font/GrandHotel-Regular.otf') format('opentype');
 }
 
 html, body, input, textarea, select {
-    font-family: 'OpenSans';
+    font-family: 'OpenSans', Arial;
 }
 
 body {
@@ -132,7 +132,7 @@ label {
   bottom: 0;
   background-color: rgba(0, 0, 0, .6);
   color: #ccc;
-  padding: .5em 1.5em;
+  padding: .5em 1em;
   text-align: center;
   margin: 10px;
   border-radius: 3px;
@@ -165,14 +165,15 @@ label {
 .control {
   display: block;
   position: fixed;
-  top: 50%;
+  max-height: 70%;
+  top: 44%;
   transform: translateY(-50%);
-  padding: 15px 20px;
+  padding: 30px;
   width: auto;
   /*border-top: 2px solid rgba(250,250,250,.2);*/
   background-color: rgba(0, 0, 0, .95);
   color: #ddd;
-  border-radius: 3px;
+  border-radius: 5px;
   z-index: 1000;
   overflow-y: scroll;
   margin-bottom: 2em;
@@ -189,11 +190,11 @@ label {
 }
 
 .control.left {
-  left: -4px;
+  left: -15px;
 }
 
 .control.right {
-  right: -4px;
+  right: -15px;
 }
 
 .control select, .control input {

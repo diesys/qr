@@ -15,6 +15,11 @@ img/favicon144.png
 img/favicon256.png
 img/flowinspace.svg
 
+#FONTS
+font/GrandHotel-Regular.otf
+font/OpenSans-Regular-webfont.ttf
+font/OpenSans-Regular-webfont.woff
+
 FALLBACK:
 # This will enable imagename4.png to be as a replacement for
 # all resources under the images dir when there is no network connectivity.
