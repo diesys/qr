@@ -19,6 +19,11 @@ img/flowinspace.svg
 font/GrandHotel-Regular.otf
 font/OpenSans-Regular-webfont.ttf
 font/OpenSans-Regular-webfont.woff
+font/ElegantIcons.eot
+font/ElegantIcons.eot
+font/ElegantIcons.woff
+font/ElegantIcons.ttf
+font/ElegantIcons.svg
 
 FALLBACK:
 # This will enable imagename4.png to be as a replacement for
