@@ -1,2 +1,4 @@
 · qr che ha dimensione massima
 · la textarea deve perdere il focus se clicchi la barra di resize (perche nei mobile fa apparire la tastiera)
+· preferire il canvas nei mobile?
+̣· border-radius anche nel canvas

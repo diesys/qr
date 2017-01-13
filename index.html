@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="qrflowinspace.appcache">
+<!-- <html lang="en" manifest="qrflowinspace.apcache"> -->
 
 <head>
     <meta charset="utf-8">
@@ -53,16 +53,18 @@
       <textarea autofocus id="text" spellcheck="false" placeholder="Text to QR-encode.."></textarea>
     </div>
 
-    <div class="sizeContainer">
-      <label for="size">SIZE:</label>
+    <div class="bottomBar">
+      <div id="lControlToggle">&#x66;</div>
         <input id="size" type="range" value="240" min="100" max="1000" step="10" onfocus="blur();">
+        <label for="size">SIZE:</label>
+      <div id="rControlToggle">&#x6c;</div>
     </div>
 
     <!-- The QR is generated here  -->
     <div id="container"></div>
 
+
     <!-- Left control menu -->
-    <div id="lControlToggle">&#x66;</div>
     <div id="lControl" class="control left hidden">
       <label for="render">RENDER MODE</label>
         <select id="render">
@@ -100,7 +102,6 @@
     </div>
 
     <!-- Right control menu -->
-    <div id="rControlToggle">&#x6c;</div>
     <div id="rControl" class="control right hidden">
       <!-- <label for="mode">DECORATION</label> -->
         <select id="mode">
