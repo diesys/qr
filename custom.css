@@ -232,7 +232,7 @@ label {
 }
 
 .control select, .control input, div.upload {
-  background: #222;
+  background-color: #222;
   color: #ddd;
   padding: 5px 8px;
   border-radius: 4px;
