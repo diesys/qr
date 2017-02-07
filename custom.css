@@ -243,12 +243,12 @@ label {
 }
 
 div.upload input[type="file"] {
-    opacity: 0 !important;
+    opacity: 0;
     position: absolute;
     height: 20px;
     bottom: 0px;
     width: 100px;
-    right: 40px;
+    right: 0px;
     z-index: 2;
     margin: 0;
     /*display: inline-block;*/

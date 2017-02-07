@@ -47,13 +47,13 @@
 
 <body>
     <!-- Background -->
-    <div class="space"></div>
+    <div class="space" id="space"></div>
 
     <div class="textContainer">
       <textarea autofocus id="text" spellcheck="false" placeholder="Text to QR-encode.."></textarea>
     </div>
 
-    <div class="bottomBar">
+    <div class="bottomBar" id="bottomBar">
       <div id="lControlToggle">&#x66;</div>
         <input id="size" type="range" value="240" min="100" max="1000" step="10" onfocus="blur();">
         <label for="size">SIZE:</label>
@@ -144,7 +144,19 @@
 
     <script>
       var lControl = document.getElementById("lControl"),
-          rControl = document.getElementById("rControl");
+          rControl = document.getElementById("rControl"),
+          container = document.getElementById("container"),
+          text = document.getElementById("text");
+
+      container.onclick = function() {
+           lControl.className = "control left hidden";
+           rControl.className = "control right hidden"
+      };
+
+      text.onclick = function() {
+           lControl.className = "control left hidden";
+           rControl.className = "control right hidden"
+      };
 
       document.getElementById("lControlToggle").onclick = function() {
         if (lControl.className == "control left hidden")
