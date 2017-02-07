@@ -36,7 +36,7 @@ html, body {
   100%  {opacity: 1;}
 }
 
-::-webkit-scrollbar { 
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -231,23 +231,54 @@ label {
   right: -15px;
 }
 
-.control select, .control input {
-  background-color: #222;
+.control select, .control input, div.upload {
+  background: #222;
   color: #ddd;
-  padding: 5px;
+  padding: 5px 8px;
   border-radius: 4px;
   border: none;
   outline: none;
   height: auto;
+  transition: all .3s;
+}
+
+div.upload input[type="file"] {
+    opacity: 0 !important;
+    position: absolute;
+    height: 20px;
+    bottom: 0px;
+    width: 100px;
+    right: 40px;
+    z-index: 2;
+    margin: 0;
+    /*display: inline-block;*/
+}
+
+div.upload {
+  text-align: center;
+  display: block;
+  margin: 0;
+  position: absolute;
+  height: 20px;
+  bottom: 21px;
+  right: 40px;
+  width: 100px;
+  z-index: 1;
+  font-size: .9em;
+}
+
+div.upload:hover {
+  background: #333;
+}
+
+div.upload:active {
+  background: #111;
+  transform: translateY(2px);
 }
 
 .control input#back, .control input#fill, .control input#fontcolor {
   height: 30px;
   width: 30px;
-}
-
-.control input#image {
-  background-color: transparent;
 }
 
 .control input#minversion, .control input#quiet, .control input#rounded,
