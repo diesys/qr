@@ -145,31 +145,48 @@
     <script>
       var lControl = document.getElementById("lControl"),
           rControl = document.getElementById("rControl"),
+          background = document.getElementById("space"),
           container = document.getElementById("container"),
           text = document.getElementById("text");
 
+      background.onclick = function() {
+        lControl.className = "control left hidden";
+        rControl.className = "control right hidden";
+        background.className = "space";
+      }
+
       container.onclick = function() {
            lControl.className = "control left hidden";
-           rControl.className = "control right hidden"
+           rControl.className = "control right hidden";
+           background.className = "space";
       };
 
       text.onclick = function() {
            lControl.className = "control left hidden";
-           rControl.className = "control right hidden"
+           rControl.className = "control right hidden";
+           background.className = "space";
       };
 
       document.getElementById("lControlToggle").onclick = function() {
-        if (lControl.className == "control left hidden")
-           lControl.className = "control left"
-        else
-           lControl.className = "control left hidden"
+        if (lControl.className == "control left hidden") {
+           lControl.className = "control left";
+           background.className = "space unfocus";
+         }
+        else {
+           lControl.className = "control left hidden";
+           background.className = "space";
+         }
       };
 
       document.getElementById("rControlToggle").onclick = function() {
-        if (rControl.className == "control right hidden")
-           rControl.className = "control right"
-        else
-           rControl.className = "control right hidden"
+        if (rControl.className == "control right hidden") {
+           rControl.className = "control right";
+           background.className = "space unfocus";
+          }
+        else {
+           rControl.className = "control right hidden";
+           background.className = "space";
+         }
       };
     </script>
 
